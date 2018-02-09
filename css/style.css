@@ -1,0 +1,322 @@
+@font-face {
+	font-family: myfont;
+	src: url(../fonts/Balham.otf);
+}
+
+@font-face {
+	font-family: myfont2;
+	src: url(../fonts/ZagBold.otf);
+}
+
+body{ margin: 0px; padding: 0;}
+
+.container2, .container3, .container4{ 	
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.cabecalho{
+	width: vw;
+	text-align: center;
+	font-family: myfont;
+	font-size: 1.6em;
+	margin: auto;
+	background-color: #c7c7c7;
+}
+.cabecalho:after{ content: "MICHAEL";}
+
+@keyframes movMenu{
+	0%{ left: 3% }
+	50%{ left: 3.5% }
+	100%{ left: 3%; }
+}
+
+.botaoMenu{
+	background: url("../imagens/botaoMenu.svg") no-repeat;
+	background-size: cover;
+	width: 60px;
+	height: 60px;
+	border: none;
+	position: absolute;
+	top: 35%;
+	left: 3%;
+	-webkit-animation: movMenu 2s infinite;
+	-moz-animation: movMenu 2s infinite;
+	-o-animation: movMenu 2s infinite;
+	animation: movMenu 2s infinite;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.menu{
+	position: absolute;
+	top: border-box;
+	left: 0;
+	background-color: #c7c7c7;
+	z-index: 2;
+	width: 0;
+	opacity: 0;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+.fecharMenu{
+	font-family: myfont2;
+	border: none;
+	font-size: 1.8em;
+	background: none;
+	float: right;
+	cursor: pointer;
+	color: #000;
+}
+
+.fecharMenu:hover{ color: #eee;}
+
+.btnMenu{
+	width: 10%;
+	height: 10%;
+	border: none;
+	background: none;
+	font-family: myfont2;
+	font-size: 1.3em;
+	text-align: center;
+	margin: 18% 0%;
+	display: none;
+	width: 100%;
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-o-transition: all 2s;
+	transition: all 2s;
+}
+
+.btnMenu:hover{ background: #eee; cursor: pointer;}
+
+#rdMenu{ display: none;}
+
+#rdMenu:checked + .menu{
+	width: 60%;
+	height: auto;
+	opacity: 1;
+}
+
+#rdMenu:checked + .menu :not(label){ display: block;}
+
+.textoPrincipal{
+	text-align: center;
+	width: 250px;
+	margin:  15% auto;
+	
+}
+
+p{ margin: 0; font-family: myfont2;}
+
+.msg:nth-child(2){ font-size: 1.8em;}
+.msg:nth-child(1){ font-size: 2.0em;}
+.msg:nth-child(3){ font-size: 2.5em;}
+
+.titulo{
+	font-size: 2.1em;
+	font-family: myfont2;
+	width: 100%;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.fotoSobre{
+	background: url("../imagens/fotoSobre.png") no-repeat;
+	width: 85px;
+	height: 85px;
+	margin: auto;
+}
+
+.txtSobre{ font-size: 1.8em; text-align: center;}
+.txtProfissao{ margin: 30px 0px;}
+
+.progress{
+	display: block;
+	width: 110px;
+	height: 30px;
+	margin: 70px auto;
+}
+
+.progressBg{
+	width: 110px;
+	height: 20px;
+	background: #ccc;
+	border-radius: 90px;
+	margin-top: 5px;
+}
+
+@keyframes exp{ from{ width: 0;} }
+
+.progressBar{
+	height: 20px;
+	background: #000;
+	border-radius: 90px;
+	box-sizing: border-box;
+	-webkit-animation: exp 2s;
+	-moz-animation: exp 2s;
+	-o-animation: exp 2s;
+	animation: exp 2s;
+}
+
+.langName{ font-size: 1.6em;}
+
+/*nível de conhecimento em cada linguagem*/
+
+.htmlXp{  width: 70px; } 
+
+.cssXp{  width: 60px; }
+
+.jsXp{ width: 60px; }
+
+.phpXp{ width: 40px; }
+
+/*pg Contato*/
+.linkedin, .github{ font-family: myfont2; font-size: 30px;}
+
+.linkedinLogo{ background: url("../imagens/linkedinLogo.svg") no-repeat; }
+
+.githubLogo{ background: url("../imagens/gitLogo.svg") no-repeat; }
+
+.gmailLogo{	background: url("../imagens/gmailLogo.svg") no-repeat; }
+
+.linkedinLogo, .githubLogo{
+	background-size: cover;
+	width: 42px;
+	height: 42px;
+	margin-right: 10px;
+}
+
+.linkedin, .github{
+	position: absolute;
+	margin-top: 50px;
+	display: flex;
+}
+
+.linkedin{ margin-left: 200px;}
+
+.github{ margin-left: 850px;}
+
+.gmailLogo{
+	background-size: cover;
+	width: 70px;
+	height: 60px;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.gmail{
+	font-family: myfont2;
+	font-size: 35px;
+	display: flex;
+	width: 520px;
+	margin: 300px auto auto	auto;
+
+}
+
+/*pg projetos*/
+.projetos{
+	width: 30%;
+	max-width: 1000px;
+	min-width: 180px;
+	margin-top: 50px; 
+	margin: auto;
+}
+.linkProjeto{
+	background: #fff;
+	width: 180px;
+	height: 120px;
+	box-shadow: 3px 3px 3px;
+	margin: 20px 80px 120px 80px;
+	display: inline;
+	float: left;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+.projeto1{
+	background: url("../imagens/projeto1.jpg") no-repeat;
+	background-size: cover;
+}
+
+.linkProjeto:hover{ cursor: pointer; opacity: 0.6;}
+
+/*pg contato*/
+.linkedin, .github, .gmail{
+	position: relative;
+	width: 250px;
+	margin: 0;
+	display: block;
+	margin: 60px auto;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.linkedinLogo, .githubLogo, .gmailLogo{ margin: auto;}
+
+/*pg projetos*/
+.projetos, .linkProjeto{
+	margin: 30px auto;
+	position: relative;
+	display: block;
+	z-index: -1;
+}
+
+@media only screen and (min-width: 600px){
+	.cabecalho{ font-size: 3.5em; }
+	.textoPrincipal{ width: 350px; }
+
+	.msg:nth-child(2){ font-size: 2.8em;}
+	.msg:nth-child(1){ font-size: 3.0em;}
+	.msg:nth-child(3){ font-size: 3.5em;}
+
+	.btnMenu{ font-size: 2em; margin: 10% 0%;}
+
+	/*pg sobre*/
+	.txtProfissao{ margin: 8px; font-size: 1.6em; }
+
+	.langHtml, .langCss{ margin-top: 50px; } 
+
+	.langHtml{ margin-left: 15%; float: left;}
+
+	.langCss{ margin-right: 15%; float: right;}
+
+	.langJs{ margin-top: 3%; }
+
+	.langPhp{ margin-top: 10%; }
+
+	/*pg contato*/
+	.linkedin, .github{ margin-top: 2%; }
+	.linkedin{float: left; margin-left: 5%; }
+	.github{ float: right;  margin-right: 5%; }
+	.gmail{ margin-top: 25%; }
+
+	/*pg projetos*/
+	.projetos{ width: 80%;}
+
+	.linkProjeto{
+		display: inline-flex;
+		float: left;
+		margin: 30px;
+	}
+}
+
+@media only screen and (min-width: 1280px){
+	/*pg sobre*/
+	.txtProfissao{ margin: 30px; font-size: 1.8em;}
+
+	/*pg contato*/
+	.linkedin, .github{	margin-top: 10%}
+	.linkedin{ margin-left: 20%;}
+	.github{ margin-right: 20%;}
+
+	/*pg projetos*/
+	.projetos{ width: 75%;}
+
+	.linkProjeto{margin: 70px;}
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Michael | Portfólio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/script.js" defer></script>
+</head>
+<body>
+	<header class="cabecalho" onclick = "closeMenu()"></header>
+	<input type="checkbox" id="rdMenu" name="rdMenu">
+	<nav class="menu">
+		<label for="rdMenu" class="fecharMenu" title="Fechar Menu" >X</label>
+		<button class="btnMenu" onclick="abrirPg()">Home</button>
+		<button class="btnMenu" onclick="abrirPg(2)">Sobre</button>
+		<button class="btnMenu" onclick="abrirPg(3)">Contato</button>
+		<button class="btnMenu" onclick="abrirPg(4)">Projetos</button>
+	</nav>
+	<label for="rdMenu" class="botaoMenu" title="Abrir Menu"></label>
+	<!-- Home -->
+	<div class="container" onclick = "closeMenu()">
+		<div class="textoPrincipal">
+			<p class="msg"></p>
+			<p class="msg"></p>
+			<p class="msg"></p>
+		</div>
+	</div>
+	<!-- sobre -->
+	<div class="container2" onclick = "closeMenu()">
+		<div class="titulo">Sobre</div>
+		<div class="fotoSobre"></div>
+		<p class="txtSobre txtProfissao">Técnico em Informática</p>
+		<p class="txtSobre txtProfissao">Desenvolvedor Front-End</p>
+		<div class="progress langHtml">
+			<p class="langName">HTML5</p>
+			<div class="progressBg">
+				<div class="progressBar htmlXp"></div>
+			</div>
+		</div>
+		<div class="progress langCss">
+			<p class="langName">CSS3</p>
+			<div class="progressBg">
+				<div class="progressBar cssXp"></div>
+			</div>
+		</div>
+		<div class="progress langJs">
+			<p class="langName">JS</p>
+			<div class="progressBg">
+				<div class="progressBar jsXp"></div>
+			</div>
+		</div>
+		<div class="progress langPhp">
+			<p class="langName">PHP</p>
+			<div class="progressBg">
+				<div class="progressBar phpXp"></div>
+			</div>
+		</div>
+	</div>
+	<!-- contato -->
+	<div class="container3" onclick = "closeMenu()">
+		<div class="titulo">Contato</div>
+		<div class="fotoSobre"></div>
+		<div class="linkedin">
+			<div class="linkedinLogo" title="Linkedin"></div>
+			linkedin.com/michaelsdl
+		</div>
+		<div class="github">
+			<div class="githubLogo" title="Github"></div>
+			github.com/michaelsdl
+		</div>
+		<div class="gmail">
+			<div class="gmailLogo" title="Gmail"></div>
+			michaelsdelima@gmail.com
+		</div>
+	</div>
+	<!-- projetos -->
+	<div class="container4" onclick = "closeMenu()">
+		<div class="titulo">Projetos</div>
+		<div class="projetos">
+			<div class="linkProjeto projeto1" onclick="window.open('http://ead-learning.atwebpages.com'); value='blank'"></div>
+			<div class="linkProjeto projeto2"></div>
+			<div class="linkProjeto projeto3"></div>
+			<div class="linkProjeto projeto4"></div>
+			<div class="linkProjeto projeto5"></div>
+			<div class="linkProjeto projeto6"></div>
+		</div>
+	</div>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</body>
+</html>

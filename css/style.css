@@ -244,6 +244,12 @@ p{ margin: 0; font-family: myfont2;}
 	background-size: cover;
 }
 
+.projeto2{
+	background: url("../imagens/projeto2.jpg") no-repeat;
+	background-size: 100%;
+}
+
+
 .linkProjeto:hover{ cursor: pointer; opacity: 0.6;}
 
 /*pg contato*/

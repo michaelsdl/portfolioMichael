@@ -249,6 +249,11 @@ p{ margin: 0; font-family: myfont2;}
 	background-size: 100%;
 }
 
+.projeto3{
+	background: url("../imagens/projeto3.jpg") no-repeat;
+	background-size: cover;
+}
+
 
 .linkProjeto:hover{ cursor: pointer; opacity: 0.6;}
 
